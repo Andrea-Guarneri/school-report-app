@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Favicon standard -->
+  <link rel="icon" href="assets/images/school-logo.png" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>School Report 🎓</title>
+</head>
+
+<body class="bg-teal-950 flex items-center justify-center h-screen">
+
+  <div class="bg-gray-200 w-[800px] rounded-lg p-6 shadow-lg">
+
+    <!-- Top section with logo and student information -->
+    <div class="flex justify-between items-center mb-6">
+
+      <!-- School Logo -->
+      <div class="w-28 h-28 rounded-lg overflow-hidden">
+        <img src="assets/images/school-logo.png" alt="School Logo" class="object-cover w-full h-full">
+      </div>
+
+      <!-- Student Name and Photo -->
+      <div class="flex items-center space-x-4">
+        <div>
+          <!-- ID student-name / displays the student's full name -->
+          <span id="student-name" class="block font-sans font-semibold text-xl">Student Name</span>
+        </div>
+
+        <!-- Student Photo -->
+        <div class="w-20 h-20 rounded-full overflow-hidden">
+          <img src="assets/images/photo.png" alt="Student Photo" class="object-cover w-full h-full">
+        </div>
+      </div>
+    </div>
+
+    <!-- Title of the report card -->
+    <div class="text-center">
+      <!-- ID report-title -->
+      <h2 id="report-title" class="text-2xl font-sans font-semibold bg-teal-700 text-white py-2 rounded"></h2>
+    </div>
+
+    <!-- Grades table -->
+    <div class="bg-teal-700 rounded-lg p-4 mt-12">
+
+      <table class="bg-white table-auto w-full">
+        <thead class="text-center">
+          <tr>
+            <td class="border border-black px-4 py-2 font-bold text-black">Periods</td>
+            <!-- ID for periods -->
+            <td id="period1" class="border border-black px-4 py-2 font-bold text-black">1º</td>
+            <td id="period2" class="border border-black px-4 py-2 font-bold text-black">2º</td>
+            <td id="period3" class="border border-black px-4 py-2 font-bold text-black">3º</td>
+            <td id="period4" class="border border-black px-4 py-2 font-bold text-black">4º</td>
+          </tr>
+        </thead>
+
+        <tbody class="text-center text-teal-700 font-semibold">
+          <tr>
+            <td class="border border-black px-4 py-2 font-bold text-black">Grades</td>
+            <!-- ID for grades / displays the grades divided by the 4 periods-->
+            <td id="grade1" class="border border-black px-4 py-2"></td>
+            <td id="grade2" class="border border-black px-4 py-2"></td>
+            <td id="grade3" class="border border-black px-4 py-2"></td>
+            <td id="grade4" class="border border-black px-4 py-2"></td>
+          </tr>
+
+          <tr>
+            <td class="border border-black px-4 py-2 font-bold text-black">Absences</td>
+            <!-- ID for absences / shows absences divided by the 4 periods -->
+            <td id="absences1" class="border border-black px-4 py-2"></td>
+            <td id="absences2" class="border border-black px-4 py-2"></td>
+            <td id="absences3" class="border border-black px-4 py-2"></td>
+            <td id="absences4" class="border border-black px-4 py-2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Total absences and average -->
+    <div class="flex justify-between mt-12">
+      <div class="bg-red-100 border-2 border-red-800 p-2 rounded-lg font-semibold text-lg text-red-800">
+        <!-- ID total-absences / displays the total of absences -->
+        Total absences: <span id="total-absences"></span>
+      </div>
+
+      <div class="p-2 bg-green-100 border-2 border-green-800 rounded-lg font-semibold text-lg text-green-800">
+        <!-- ID average-grade / displays the average of the grade -->
+        Average grades: <span id="average-grade"></span>
+      </div>
+    </div>
+
+    <!-- Final status -->
+    <div class="mt-6 text-center flex flex-col gap-y-2">
+      <!-- ID student-status / displays the student's status -->
+      <div class="text-xl font-semibold bg-teal-700 text-white py-2 rounded">
+        Student status: <span id="student-status"></span>
+      </div>
+      <!-- ID error-message / displays error messages -->
+      <div class="hidden" id="error-container">
+        Error: <span id="error-message"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+</body>
+
+</html>
