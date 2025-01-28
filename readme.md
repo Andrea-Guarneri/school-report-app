@@ -31,7 +31,7 @@ It features:
 
 ## 📊 Example Output
 
-![School Report Example](assets/images/report-example.png)
+![School Report Example](assets/images/school-report-example.png)
 
 ## 📖 Features
 
@@ -48,7 +48,7 @@ It features:
 
 ## 🔍 View the Project
 
-Click [here]() to view the project directly.
+Click [here](https://school-report-app.netlify.app/) to view the project directly.
 
 ## ✨ Contributions
 
