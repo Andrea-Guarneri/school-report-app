@@ -138,7 +138,7 @@ if (
 
 // Fills in the student's name in the HTML
 document.getElementById("student-name").innerText = studentFullName;
-document.getElementById("report-title").innerText += studentFullName;
+document.getElementById("report-title").innerText += " " + studentFullName;
 
 // Fill in the grades in the HTML
 document.getElementById("grade1").innerText = studentGradeFirstPeriod;
