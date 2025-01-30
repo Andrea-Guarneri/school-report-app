@@ -25,9 +25,9 @@
       </div>
 
       <!-- Student Name and Photo -->
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center gap-x-2">
         <div>
-          <span id="student-name" class="block font-sans font-semibold text-xl sm:text-2xl">Student Name</span>
+          <span id="student-name" class="block font-sans font-semibold text-lg md:text-xl">Student Name</span>
         </div>
 
         <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden">
@@ -37,8 +37,9 @@
     </div>
 
     <!-- Title of the report card -->
-    <div class="text-center">
-      <h2 id="report-title" class="text-xl sm:text-2xl font-sans font-semibold bg-teal-700 text-white py-2 rounded"></h2>
+    <div class="text-center bg-teal-700 p-2 rounded">
+      <h2 id="report-title" class="text-lg md:text-xl font-sans font-semibold text-white">
+        Student report card</h2>
     </div>
 
     <!-- Grades table -->
@@ -75,23 +76,25 @@
     </div>
 
     <!-- Total absences and average -->
-    <div class="flex flex-col sm:flex-row justify-between items-center mt-8 gap-4">
-      <div class="w-full sm:w-auto bg-red-100 border-2 border-red-800 p-2 rounded-lg font-semibold text-lg text-red-800">
+    <div class="flex flex-col sm:flex-row justify-between items-center mt-8 gap-y-2 md:gap-4">
+      <div
+        class="flex items-center w-full justify-center sm:w-auto border-2 border-red-800 p-2 rounded-lg font-semibold text-base md:text-lg text-red-800 bg-red-100">
         Total absences: <span id="total-absences"></span>
       </div>
 
-      <div class="w-full sm:w-auto p-2 bg-green-100 border-2 border-green-800 rounded-lg font-semibold text-lg text-green-800">
+      <div
+        class="flex items-center w-full justify-center sm:w-auto p-2 border-2 border-green-800 rounded-lg font-semibold text-base md:text-lg text-green-800  bg-green-100">
         Average grades: <span id="average-grade"></span>
       </div>
     </div>
 
     <!-- Final status -->
     <div class="mt-6 text-center flex flex-col gap-y-2">
-      <div class="text-lg sm:text-xl font-semibold bg-teal-700 text-white py-2 rounded">
+      <div class="text-lg md:text-xl font-semibold bg-teal-700 text-white py-2 rounded">
         Student status: <span id="student-status"></span>
       </div>
       <div class="hidden" id="error-container">
-        Error: <span id="error-message"></span>
+        Error: <span id="error-message">flamengo</span>
       </div>
     </div>
   </div>
@@ -99,4 +102,5 @@
   <!-- JavaScript -->
   <script src="index.js"></script>
 </body>
+
 </html>
